@@ -1,0 +1,84 @@
+.navbar {
+  background-color: white;
+  background: white;
+  border-color: none;
+  color: black;
+  font-size: 16px;
+  height: 70px;  
+}
+
+.navbar-header {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  height: 70px;
+}
+
+.navbar-header a {
+  width: 240px;
+  height: 70px;
+  background-image: url('../assets/logo.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navbar .container {
+  width: 95vw;
+}
+
+.navbar-default .navbar-nav li a {
+  color: black; 
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  padding: 10px;
+
+}
+
+navbar-default .navbar-brand {
+  color: black;
+}
+
+ul.center.nav.navbar-nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-right: 6%;
+}
+
+.nav-links {
+  display: flex;
+}
+
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  pointer-events: auto;
+}
+
+a:hover .nav-icon {
+  filter: invert(50%);
+}
+
+.navbar-collapse.collapse.in {
+  display: grid;
+  grid-template-rows: 50px 50px;
+  overflow: hidden;
+  background: white;
+}
+
+
+.navbar-collapse.collapse.in .nav-links {
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.navbar-collapse.collapse.in .navbar-nav li a {
+  top: 0px;
+}
+
+.navbar-collapse.collapse.in ul.center.nav.navbar-nav {
+  left: 16px;
+}

@@ -1,0 +1,204 @@
+.project-5 .header {
+  width: 100vw;
+  height: 175vh;
+  margin: 0 auto;
+
+  background-image: url('./assets/intro.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+@media screen and (min-width: 551px) {
+  .project-5 .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(22, calc(.75 * (.5 * 100vw)));
+    grid-template-areas:
+      "one one"
+      "one one"
+      "two two"
+      "two two"
+      "three ."
+      ". four"
+      "five five"
+      "five five"
+      "six ."
+      ". seven"
+      "eight eight"
+      "eight eight"
+      "nine nine"
+      "nine nine"
+      "ten ."
+      ". eleven"
+      "twelve twelve"
+      "twelve twelve"
+      "thirteen thirteen"
+      "thirteen thirteen"
+      "fourteen fourteen"
+      "fourteen fourteen";
+      padding: 0 2.5%;
+      grid-gap: 5px;
+      margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .project-5 .header {
+    flex-direction: column;
+    margin-top: 30vh;
+  }
+
+  .project-5 .description {
+    flex-direction: column;
+    font-size: 14px;
+    margin-top: 20vh;
+    margin-bottom: 20px;
+  }
+
+  .project-5 .description .heading {
+    margin-bottom: 5px;
+  }
+  .project-5 .description .item {
+    margin-bottom: 20px;
+  }
+  .project-5 .description p {
+    margin: 0px;
+  }
+
+  .project-5 .left {
+    margin-bottom: 20px;
+  }
+
+  .project-5 .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(14, calc(.75 * 100vw));
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine"
+      "ten"
+      "eleven"
+      "twelve"
+      "thirteen"
+      "fourteen";
+      padding: 0;
+      grid-gap: 5px;
+      margin-bottom: 50px;
+  }
+
+  .project-5 .project-grid>div {
+    position: relative;
+  }
+
+  .project-5 .project-grid>div:before {
+    display: table;
+    padding-top: 100%;
+    content: '';
+  }
+
+  .project-5 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+.project-5 .project-grid .item-1 {
+  background-image: url('./assets/image-1.jpg');
+  background-size: 100% 100%;
+  grid-area: one;
+}
+
+.project-5 .project-grid .item-2 {
+  background-image: url('./assets/image-2.jpg');
+  background-size: 100% 100%;
+  grid-area: two;
+}
+
+.project-5 .project-grid .item-3 {
+  background-image: url('./assets/image-3.jpg');
+  background-size: 100% 100%;
+  grid-area: three;
+}
+
+.project-5 .project-grid .item-4 {
+  background-image: url('./assets/image-4.jpg');
+  background-size: 100% 100%;
+  grid-area: four;
+}
+
+.project-5 .project-grid .item-5 {
+  background-image: url('./assets/image-5.jpg');
+  background-size: 100% 100%;
+  grid-area: five;
+}
+
+.project-5 .project-grid .item-6 {
+  background-image: url('./assets/image-6.jpg');
+  background-size: 100% 100%;
+  grid-area: six;
+}
+
+.project-5 .project-grid .item-7 {
+  background-image: url('./assets/image-7.jpg');
+  background-size: 100% 100%;
+  grid-area: seven;
+}
+
+.project-5 .project-grid .item-8 {
+  background-image: url('./assets/image-8.jpg');
+  background-size: 100% 100%;
+  grid-area: eight;
+}
+
+.project-5 .project-grid .item-9 {
+  background-image: url('./assets/image-9.jpg');
+  background-size: 100% 100%;
+  grid-area: nine;
+}
+
+.project-5 .project-grid .item-10 {
+  background-image: url('./assets/image-10.jpg');
+  background-size: 100% 100%;
+  grid-area: ten;
+}
+
+.project-5 .project-grid .item-11 {
+  background-image: url('./assets/image-11.jpg');
+  background-size: 100% 100%;
+  grid-area: eleven;
+}
+
+.project-5 .project-grid .item-12 {
+  background-image: url('./assets/image-12.jpg');
+  background-size: 100% 100%;
+  grid-area: twelve;
+}
+
+.project-5 .project-grid .item-13 {
+  background-image: url('./assets/image-13.jpg');
+  background-size: 100% 100%;
+  grid-area: thirteen;
+}
+
+.project-5 .project-grid .item-14 {
+  background-image: url('./assets/image-14.jpg');
+  background-size: 100% 100%;
+  grid-area: fourteen;
+}
