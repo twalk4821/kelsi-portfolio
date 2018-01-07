@@ -14,7 +14,7 @@ class Project extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      projectId: null,
+      project: null,
     }
   }
 
@@ -24,38 +24,49 @@ class Project extends Component {
       return;
     }
      
-    const { projectId } = this.props.location.query;
-    this.setState({ projectId }); 
+    const { project } = this.props.location.query;
+    fetch('/projects/views', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ project }),
+    });
+    this.setState({ project }); 
 
     window.scrollTo(0,0);
   }
 
   render() {
-    const { projectId } = this.state;
+    const { project } = this.state;
     const chooseProject = (id) => {
       switch (id) {
         case 1:
-          return (<Project1 />);
+          return (<Project1 project={project} />);
         case 2:
-          return (<Project2 />);
+          return (<Project2 project={project} />);
         case 3:
-          return (<Project3 />);
+          return (<Project3 project={project} />);
         case 4:
-          return (<Project4 />);
+          return (<Project4 project={project} />);
         case 5:
-          return (<Project5 />);
+          return (<Project5 project={project} />);
         case 6:
-          return (<Project6 />);
+          return (<Project6 project={project} />);
         case 7:
-          return (<Project7 />);
+          return (<Project7 project={project} />);
         case 8:
-          return (<Project8 />);
+          return (<Project8 project={project} />);
         default:
           return (<div>Error: could not find the specified project</div>);
       };
     };
-    const project = chooseProject(projectId);
-    return project;
+
+    if (project) {
+      const projectComponent = chooseProject(project.id);
+      return projectComponent;
+    }
+    return null;
   }
 }
 
