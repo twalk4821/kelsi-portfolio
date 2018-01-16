@@ -9,6 +9,7 @@ import Project5 from './projectViews/Project5/Project5';
 import Project6 from './projectViews/Project6/Project6';
 import Project7 from './projectViews/Project7/Project7';
 import Project8 from './projectViews/Project8/Project8';
+import LikeButton from '../components/LikeButton';
 
 class Project extends Component {
   constructor(props) {
@@ -63,8 +64,13 @@ class Project extends Component {
     };
 
     if (project) {
-      const projectComponent = chooseProject(project.id);
-      return projectComponent;
+      const ProjectComponent = chooseProject(project.id);
+      return (
+        <div>
+          {ProjectComponent}
+          <LikeButton project={project}/>
+        </div>
+      );
     }
     return null;
   }
