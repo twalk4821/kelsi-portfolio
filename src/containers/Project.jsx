@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import FacebookProvider, { Comments } from 'react-facebook';
 
 import Project1 from './projectViews/Project1/Project1';
 import Project2 from './projectViews/Project2/Project2';
@@ -69,6 +70,9 @@ class Project extends Component {
         <div>
           {ProjectComponent}
           <LikeButton project={project}/>
+          <FacebookProvider appId="1566443460100970">
+            <Comments href="http://www.facebook.com" numPosts={5} />
+          </FacebookProvider>
         </div>
       );
     }
