@@ -7,9 +7,9 @@ Trendline Motorsport
 
 export default (props) => (
   <div className="project-7">
-    <div className="header"></div>
     <div className="project-grid">
       <div className="item-1 content"></div>
+      <div className="header"></div>
       <div className="item-2 content"></div>
       <div className="item-3 content"></div>
       <div className="black-1"></div>

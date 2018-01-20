@@ -1,20 +1,10 @@
-.project-8 .header {
-  width: 100vw;
-  height: 175vh;
-  margin: 0 auto;
-
-  background-image: url('./assets/intro.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .project-8 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(1, calc(.75 * 100vw));
   grid-template-areas:
-    "one";
+    "one"
+    "header";
     padding: 0;
     grid-gap: 5px;
     margin-bottom: 50px;
@@ -42,11 +32,6 @@
 }
 
 @media screen and (max-width: 550px) {
-  .project-8 .header {
-    flex-direction: column;
-    margin-top: 30vh;
-  }
-
   .project-8 .description {
     flex-direction: column;
     font-size: 14px;
@@ -74,4 +59,11 @@
   background-image: url('./assets/image-1.jpg');
   background-size: 100% 100%;
   grid-area: one;
+}
+
+.project-8 /.project-grid .header {
+  background-image: url('./assets/intro.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

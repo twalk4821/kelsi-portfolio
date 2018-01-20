@@ -1,23 +1,14 @@
-.project-1 .header {
-  width: 100vw;
-  height: 175vh;
-  margin: 0 auto;
-
-  background-image: url('./assets/intro.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 
 @media screen and (min-width: 551px) {
   .project-1 .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(10, calc(.75 * (.5 * 100vw)));
+    grid-template-rows: repeat(12, calc(.75 * (.5 * 100vw)));
     grid-template-areas:
       "one one"
       "one one"
+      "header header"
+      "header header"
       "two two"
       "two two"
       "three ."
@@ -33,11 +24,6 @@
 }
 
 @media screen and (max-width: 550px) {
-  .project .header {
-    flex-direction: column;
-    margin-top: 30vh;
-  }
-
   .project .description {
     flex-direction: column;
     font-size: 14px;
@@ -62,9 +48,10 @@
   .project-1 .project-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, calc(.75 * 100vw));
+    grid-template-rows: repeat(11, calc(.75 * 100vw));
     grid-template-areas:
       "one"
+      "header"
       "two"
       "three"
       "four"
@@ -109,6 +96,14 @@
 .project-1 .project-grid .item-1 {
   background-image: url('./assets/image-1.jpg');
   grid-area: one;
+}
+
+.project-1 .project-grid .header {
+  background-image: url('./assets/intro.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: header;
 }
 
 .project-1 .project-grid .item-2 {

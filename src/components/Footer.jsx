@@ -6,6 +6,7 @@ import urls from '../constants/urls';
 
 const Footer = (props) => (
   <div className="footer">
+    <div className="divider" />
     <div className="footer-grid">
         <div>
           <p className="header">CONTACT</p>

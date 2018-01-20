@@ -1,7 +1,7 @@
 .intro {
   height: 80vh;
   margin: 0 auto;
-  background-image: url("../assets/intro.png");
+  background-image: url("../assets/intro.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,15 +11,6 @@
   line-height: 5;
   position: relative;
   top: -120px;
-}
-
-.top-image {
-  width: 100%;
-  height: 100vh;
-  background-image: url("./projectViews/Project1/assets/image-1.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .text {
@@ -49,7 +40,7 @@
   justify-items: center;
   padding: 0 2.5%;
   grid-gap: 5px;
-  margin-bottom: 120px;
+  margin: 100px 0 0 0;
 }
 
 .grid-item {

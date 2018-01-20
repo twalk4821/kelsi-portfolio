@@ -1,21 +1,10 @@
-.project-6 .header {
-  width: 100vw;
-  height: 175vh;
-  margin: 0 auto;
-
-  background-image: url('./assets/intro.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
 .project-6 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(9, calc(.75 * 100vw));
   grid-template-areas:
     "one"
+    "header"
     "two"
     "three"
     "four"
@@ -41,6 +30,8 @@
     grid-template-areas:
       "one one"
       "one one"
+      "header header"
+      "header header"
       "two two"
       "two two"
       "three three"
@@ -85,11 +76,6 @@
 }
 
 @media screen and (max-width: 550px) {
-  .project-6 .header {
-    flex-direction: column;
-    margin-top: 30vh;
-  }
-
   .project-6 .description {
     flex-direction: column;
     font-size: 14px;
@@ -119,6 +105,14 @@
   background-position: center;
   background-repeat: no-repeat;
   grid-area: one;
+}
+
+.project-6 .project-grid .header {
+  background-image: url('./assets/intro.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: header;
 }
 
 .project-6 .project-grid .item-2 {
