@@ -61,9 +61,10 @@
   grid-area: one;
 }
 
-.project-8 /.project-grid .header {
+.project-8 .project-grid .header {
   background-image: url('./assets/intro.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  grid-area: header;
 }
