@@ -33,9 +33,7 @@
     "header"
     "two"
     "three";
-    padding: 0;
     grid-gap: 5px;
-    margin-bottom: 50px;
 }
 
 .project-4 .project-grid>div {

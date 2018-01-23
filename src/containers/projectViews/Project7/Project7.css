@@ -1,38 +1,39 @@
 .project-7 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, calc(.75 * 100vw));
+  grid-template-rows: repeat(8, calc(.75 * 100vw));
   grid-template-areas:
     "one"
     "header"
     "two"
+    "sketch"
     "three"
     "four"
-    "five";
-    padding: 0;
+    "five"
+    "six";
     grid-gap: 5px;
-    margin-bottom: 50px;
 }
 
 @media screen and (min-width: 551px) {
   .project-7 .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8, calc(.75 * (.5 * 100vw)));
+    grid-template-rows: repeat(13, calc(.75 * (.5 * 100vw)));
     grid-template-areas:
       "one one"
       "one one"
       "header header"
-      "header header"
       "two two"
       "two two"
+      "sketch sketch"
+      "sketch sketch"
       "three black1"
       "black2 four"
       "five five"
-      "five five";
-      padding: 0 2.5%;
+      "five five"
+      "six six"
+      "six six";
       grid-gap: 5px;
-      margin-bottom: 100px;
   }
 }
 
@@ -127,6 +128,22 @@
   background-position: center;
   background-repeat: no-repeat;
   grid-area: five;
+}
+
+.project-7 .project-grid .item-6 {
+  background-image: url('./assets/image-6.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: six;
+}
+
+.project-7 .project-grid .sketch {
+  background-image: url('./assets/sketch.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: sketch;
 }
 
 .project-7 .project-grid .black-1 {

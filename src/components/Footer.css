@@ -30,11 +30,3 @@ p.header {
   line-height: .7;
   font-size: 12px;
 }
-
-.divider {
-  border: solid grey .5px;
-  width: 80%;
-  position: relative;
-  left: 10%;
-  margin-bottom: 40px;
-}

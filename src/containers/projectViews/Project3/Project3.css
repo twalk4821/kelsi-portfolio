@@ -2,27 +2,25 @@
   .project-3 .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(12, calc(.75 * (.5 * 100vw)));
+    grid-template-rows: repeat(17, calc(.75 * (.5 * 85vw)));
     grid-template-areas:
       "one one"
       "one one"
       "header header"
-      "header header"
       "two two"
       "two two"
-      "three ."
-      ". four"
-      "five five"
-      "five five"
-      "six seven"
-      ". eight"
-      "nine nine"
-      "nine nine"
-      "ten ."
-      "eleven twelve";
-      padding: 0 2.5%;
-      grid-gap: 5px;
-      margin-bottom: 100px;
+      "three four"
+      "eight six"
+      "seven five"
+      "nine ten"
+      "eleven twelve"
+      "thirteen fourteen"
+      "thirteen fourteen"
+      "fifteen fifteen"
+      "fifteen fifteen"
+      "sixteen seventeen"
+      "eighteen nineteen";
+      grid-gap: 5px;      
   }
 }
 
@@ -51,7 +49,7 @@
   .project-3 .project-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, calc(.75 * 100vw));
+    grid-template-rows: repeat(20, calc(.75 * 100vw));
     grid-template-areas:
       "one"
       "header"
@@ -65,10 +63,15 @@
       "nine"
       "ten"
       "eleven"
-      "twelve";
-      padding: 0;
+      "twelve"
+      "thirteen"
+      "fourteen"
+      "fifteen"
+      "sixteen"
+      "seventeen"
+      "eighteen"
+      "nineteen";
       grid-gap: 5px;
-      margin-bottom: 50px;
   }
 
   .project-3 .project-grid>div {
@@ -97,13 +100,15 @@
 
 .project-3 .project-grid .item-1 {
   background-image: url('./assets/image-1.jpg');
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: one;
 }
 
 .project-3 .project-grid .header {
   background-image: url('./assets/intro.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   grid-area: header;
@@ -111,66 +116,143 @@
 
 .project-3 .project-grid .item-2 {
   background-image: url('./assets/image-2.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: two;
 }
 
 .project-3 .project-grid .item-3 {
   background-image: url('./assets/image-3.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: three;
 }
 
 .project-3 .project-grid .item-4 {
   background-image: url('./assets/image-4.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: four;
 }
 
 .project-3 .project-grid .item-5 {
   background-image: url('./assets/image-5.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: five;
 }
 
 .project-3 .project-grid .item-6 {
   background-image: url('./assets/image-6.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: six;
 }
 
 .project-3 .project-grid .item-7 {
   background-image: url('./assets/image-7.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: seven;
 }
 
 .project-3 .project-grid .item-8 {
   background-image: url('./assets/image-8.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: eight;
 }
 
 .project-3 .project-grid .item-9 {
   background-image: url('./assets/image-9.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: nine;
 }
 
 .project-3 .project-grid .item-10 {
   background-image: url('./assets/image-10.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: ten;
 }
 
 .project-3 .project-grid .item-11 {
   background-image: url('./assets/image-11.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: eleven;
 }
 
 .project-3 .project-grid .item-12 {
   background-image: url('./assets/image-12.jpg');
-  background-size: 100% 100%;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: twelve;
+}
+
+.project-3 .project-grid .item-13 {
+  background-image: url('./assets/image-13.jpg');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: thirteen;
+}
+
+.project-3 .project-grid .item-14 {
+  background-image: url('./assets/image-14.jpg');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: fourteen;
+}
+
+.project-3 .project-grid .item-15 {
+  background-image: url('./assets/image-15.jpg');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: fifteen;
+}
+
+.project-3 .project-grid .item-16 {
+  background-image: url('./assets/image-16.jpg');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: sixteen;
+}
+
+.project-3 .project-grid .item-17 {
+  background-image: url('./assets/image-17.jpg');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: seventeen;
+}
+
+.project-3 .project-grid .item-18 {
+  background-image: url('./assets/image-18.jpg');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: eighteen;
+}
+.project-3 .project-grid .item-19 {
+  background-image: url('./assets/image-19.jpg');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: nineteen;
 }

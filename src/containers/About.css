@@ -1,7 +1,6 @@
 
 
 .about .picture {
-  width: 100vh;
   height: 100vh;
   
   background-image: url("../assets/me.jpg");
@@ -12,8 +11,18 @@
   margin: 40px auto;
 }
 
+.about .about-header {
+  height: 4vh;
+  width: calc(4vh*6.35);
+  position: relative;
+  left: calc((100vw - ((2/3)*100vh))/2 - 10px);
+  background-image: url("../assets/about-header.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .about .header {
-  width: 40vw;
   height: 60vh;
   margin: 0 auto;
   background-image: url('../assets/about.png');
@@ -24,10 +33,21 @@
   position: relative;
   top: -10vh;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .about .picture {
     width: 266px;
     height: 400px;
     margin: 0 auto;
+  }
+
+  .about .about-header {
+    margin-left: 5%;
+    margin-top: 40px;
+    position: static;
+  }
+
+  .about .header {
+    position: static;
+    width: 100%;
   }
 }

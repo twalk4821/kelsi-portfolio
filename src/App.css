@@ -30,4 +30,13 @@
 .link {
   text-decoration: underline;
   color: black;
+  cursor: pointer;
+}
+
+.divider {
+  border: solid grey .5px;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  margin-bottom: 40px;
 }

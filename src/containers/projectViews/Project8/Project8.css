@@ -5,9 +5,7 @@
   grid-template-areas:
     "one"
     "header";
-    padding: 0;
     grid-gap: 5px;
-    margin-bottom: 50px;
 }
 
 .project-8 .project-grid>div {

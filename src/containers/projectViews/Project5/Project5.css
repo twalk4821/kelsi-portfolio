@@ -2,11 +2,10 @@
   .project-5 .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(22, calc(.75 * (.5 * 100vw)));
+    grid-template-rows: repeat(21, calc(.75 * (.5 * 100vw)));
     grid-template-areas:
       "one one"
       "one one"
-      "header header"
       "header header"
       "two two"
       "two two"
@@ -28,9 +27,7 @@
       "thirteen thirteen"
       "fourteen fourteen"
       "fourteen fourteen";
-      padding: 0 2.5%;
       grid-gap: 5px;
-      margin-bottom: 100px;
   }
 }
 
@@ -76,9 +73,7 @@
       "twelve"
       "thirteen"
       "fourteen";
-      padding: 0;
       grid-gap: 5px;
-      margin-bottom: 50px;
   }
 
   .project-5 .project-grid>div {

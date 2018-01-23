@@ -23,5 +23,13 @@ export default (props) => (
       <div className="item-12 content"></div>
       <div className="item-13 content"></div>
     </div>
+    <div className="divider" />
+    <div className="description">
+      <p>A School Project at Academy of Art University</p>
+      <p>Course—Type Systems</p>
+      <p>Instructor—Brooke Willis</p>
+      <p>Category—Art Direction, Visual System</p>
+      <p>Year— Fall 2017</p>
+    </div>
   </div>
 );

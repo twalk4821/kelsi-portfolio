@@ -43,11 +43,11 @@ class navbarInstance extends Component {
             <NavItem eventKey={2}  onClick={()=>this.redirect('/about')}>About</NavItem>
           </Nav>
           <Nav className="nav-links" pullRight>
-            <NavItem eventKey={3} onClick={()=>this.navigate(urls.mail)}><Image className="nav-icon" src={mail} /></NavItem>
-            <NavItem eventKey={4} onClick={()=>this.navigate(urls.insta)}><Image className="nav-icon" src={insta}  /></NavItem>
-            <NavItem eventKey={5} onClick={()=>this.navigate(urls.facebook)}><Image className="nav-icon" src={facebook}  /></NavItem>
-            <NavItem eventKey={6} onClick={()=>this.navigate(urls.pin)}><Image className="nav-icon" src={pin}  /></NavItem>
-            <NavItem eventKey={7} ><Image className="nav-icon" src={search} /></NavItem>
+            <NavItem eventKey={3} onClick={()=>this.navigate(urls.mail)}><Image className="nav-icon mail" src={mail} /></NavItem>
+            <NavItem eventKey={4} onClick={()=>this.navigate(urls.insta)}><Image className="nav-icon insta" src={insta}  /></NavItem>
+            <NavItem eventKey={5} onClick={()=>this.navigate(urls.facebook)}><Image className="nav-icon facebook" src={facebook}  /></NavItem>
+            <NavItem eventKey={6} onClick={()=>this.navigate(urls.pin)}><Image className="nav-icon pin" src={pin}  /></NavItem>
+            <NavItem eventKey={7} ><Image className="nav-icon search" src={search} /></NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

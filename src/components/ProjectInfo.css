@@ -1,10 +1,7 @@
 .info {
   display: flex;
   flex-flow: row nowrap;
-  position: absolute;
-  top: 425px;
-  left: 375px;
-  background: white;
+  margin: 0 10% 5% 10%;
 }
 
 .info .eye {

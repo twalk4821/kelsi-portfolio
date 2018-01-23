@@ -11,13 +11,18 @@ import Project6 from './projectViews/Project6/Project6';
 import Project7 from './projectViews/Project7/Project7';
 import Project8 from './projectViews/Project8/Project8';
 import LikeButton from '../components/LikeButton';
+import ProjectInfo from '../components/ProjectInfo';
+
+
+import './Project.css';
 
 class Project extends Component {
   constructor(props) {
     super(props);
     this.state = {
       project: null,
-    }
+      liked: false,
+    };
   }
 
   componentDidMount() {
@@ -39,26 +44,51 @@ class Project extends Component {
     window.scrollTo(0,0);
   }
 
+  likeProject = (project, e = null) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    
+    fetch('/projects/likes', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ project }),
+    })
+    .then(res => res.json())
+    .then(res => {
+      if (res.status === 200) {
+        this.updateStatusToLiked();
+      }
+    })
+  }
+
+  updateStatusToLiked = () => {
+    this.setState({ liked: true });    
+  }
+
+
   render() {
-    const { project } = this.state;
+    const { project, liked } = this.state;
     const chooseProject = (id) => {
       switch (id) {
         case 1:
-          return (<Project1 project={project} />);
+          return (<Project1 project={project} likeProject={this.likeProject} />);
         case 2:
-          return (<Project2 project={project} />);
+          return (<Project2 project={project} likeProject={this.likeProject} />);
         case 3:
-          return (<Project3 project={project} />);
+          return (<Project3 project={project} likeProject={this.likeProject} />);
         case 4:
-          return (<Project4 project={project} />);
+          return (<Project4 project={project} likeProject={this.likeProject} />);
         case 5:
-          return (<Project5 project={project} />);
+          return (<Project5 project={project} likeProject={this.likeProject} />);
         case 6:
-          return (<Project6 project={project} />);
+          return (<Project6 project={project} likeProject={this.likeProject}  />);
         case 7:
-          return (<Project7 project={project} />);
+          return (<Project7 project={project} likeProject={this.likeProject} />);
         case 8:
-          return (<Project8 project={project} />);
+          return (<Project8 project={project} likeProject={this.likeProject} />);
         default:
           return (<div>Error: could not find the specified project</div>);
       };
@@ -69,7 +99,8 @@ class Project extends Component {
       return (
         <div>
           {ProjectComponent}
-          <LikeButton project={project}/>
+          <LikeButton project={project} updateStatusToLiked={this.updateStatusToLiked} liked={liked} />
+          <ProjectInfo project={project} likeProject={this.likeProject} liked={liked} />
           <FacebookProvider appId="1566443460100970">
             <Comments href="http://www.facebook.com" numPosts={5} />
           </FacebookProvider>

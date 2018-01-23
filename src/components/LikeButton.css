@@ -1,17 +1,21 @@
 .like-button {
-  height: 40px;
-  width: 125px;
+  height: 30px;
+  width: 75px;
+  font-size: 10px;
   position: fixed;
   top: 90vh;
-  left: 85vw;
+  left: 93.5vw;
   border-radius: 25px;
   font-weight: bold;
   border-style: none;
+  background-color: transparent;
 }
 
 .like-button:focus {
   outline: 0;
 }
+
+
 
 .like-button img {
   width: 33%;

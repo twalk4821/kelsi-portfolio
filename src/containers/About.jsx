@@ -12,6 +12,7 @@ const About = (props) => {
   return (
     <div className="about">
       <div className="picture"></div>
+      <div className="about-header"></div>
       <div className="header"></div>
     </div>
   );

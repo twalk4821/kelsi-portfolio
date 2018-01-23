@@ -3,9 +3,6 @@ import like from '../assets/like.png';
 import './LikeButton.css';
 
 class LikeButton extends Component {
-  state = {
-    liked: false,
-  };
 
   likeProject = (project, e = null) => {
     if (e) {
@@ -20,11 +17,11 @@ class LikeButton extends Component {
       body: JSON.stringify({ project }),
     })
     
-    this.setState({ liked: true });
+    this.props.updateStatusToLiked();
   }
   
   render() {
-    const { liked } = this.state;
+    const { liked } = this.props;
     const classes = 'like-button' + (liked ? ' liked' : '');
 
     if (liked) {
