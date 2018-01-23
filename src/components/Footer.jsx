@@ -20,8 +20,7 @@ const Footer = (props) => (
         </div>
       </div>
     <div className="copyright">
-      <p>Copyright © 2017 Kelsi Yuan.</p>
-      <p>No part of this publication can be reproduced without permission from Kelsi Yuan</p>
+      <p>COPYRIGHT © 2017 KELSI YUAN | WEBSITE BY <a className="link" href="http://tylerwalker.me">TYLER WALKER</a></p>
     </div>
   </div>
 );

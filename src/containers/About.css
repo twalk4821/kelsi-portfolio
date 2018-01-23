@@ -15,6 +15,7 @@
   height: 4vh;
   width: calc(4vh*6.35);
   position: relative;
+  top: 2vh;
   left: calc((100vw - ((2/3)*100vh))/2 - 10px);
   background-image: url("../assets/about-header.png");
   background-size: contain;
@@ -33,17 +34,15 @@
   position: relative;
   top: -10vh;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .about .picture {
-    width: 266px;
-    height: 400px;
-    margin: 0 auto;
+    height: calc((3/2)*100vw);
+    width: 100vw;
   }
 
   .about .about-header {
-    margin-left: 5%;
-    margin-top: 40px;
-    position: static;
+    top: 4vh;
+    left: 6vw;
   }
 
   .about .header {
