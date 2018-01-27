@@ -1,0 +1,24 @@
+.resume {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 40%;
+  position: relative;
+  left: 53.5%;
+}
+
+.end-section {
+  margin-bottom: 20px;
+}
+
+.sub-header {
+  font-style: italic;
+}
+
+.resume a {
+  text-align: left;
+  display: inherit;
+}
+
+.resume-link {
+  margin-bottom: 20px;
+}

@@ -4,6 +4,7 @@ import Home from './containers/Home';
 import Work from './containers/Work';
 import About from './containers/About';
 import Project from './containers/Project';
+import Resume from './containers/Resume';
 
 export default props => (
   <Switch>
@@ -40,6 +41,13 @@ export default props => (
       exact
       render={()=> (
         <Home />
+      )}
+    />
+    <Route
+      path="/resume"
+      exact
+      render={()=> (
+        <Resume />
       )}
     />
   </Switch>

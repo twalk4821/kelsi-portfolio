@@ -41,6 +41,7 @@ class navbarInstance extends Component {
           <Nav className="center">
             <NavItem eventKey={1} onClick={()=>this.redirect('/work')}>Work</NavItem>
             <NavItem eventKey={2}  onClick={()=>this.redirect('/about')}>About</NavItem>
+            <NavItem eventKey={3}  onClick={()=>this.redirect('/resume')}>Resume</NavItem>
           </Nav>
           <Nav className="nav-links" pullRight>
             <NavItem eventKey={3} onClick={()=>this.navigate(urls.mail)}><Image className="nav-icon mail" src={mail} /></NavItem>
