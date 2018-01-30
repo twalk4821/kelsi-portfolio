@@ -35,8 +35,8 @@
 
 .divider {
   border: solid grey .5px;
-  width: 80%;
+  width: 90%;
   position: relative;
-  left: 10%;
+  left: 5%;
   margin-bottom: 40px;
 }

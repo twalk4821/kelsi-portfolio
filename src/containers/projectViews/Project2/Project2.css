@@ -1,7 +1,7 @@
 .project-2 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, calc(.75 * 100vw));
+  grid-template-rows: repeat(4, calc(.75 * 90vw));
   grid-template-areas:
     "one"
     "header"

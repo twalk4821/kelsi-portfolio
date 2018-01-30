@@ -1,7 +1,7 @@
 .project-6 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, calc(.75 * 100vw));
+  grid-template-rows: repeat(9, calc(.75 * 90vw));
   grid-template-areas:
     "one"
     "header"
@@ -23,7 +23,7 @@
   .project-6 .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(17, calc(.75 * (.5 * 100vw)));
+    grid-template-rows: repeat(17, calc(.75 * (.5 * 90vw)));
     grid-template-areas:
       "one one"
       "one one"
