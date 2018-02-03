@@ -51,35 +51,18 @@ ul.center.nav.navbar-nav {
   display: flex;
 }
 
+.nav-links li {
+  width: 45px;
+  height: 40px;
+}
+
 .nav-icon {
-  width: 20px;
-  height: 20px;
+  width: 45px;
+  height: 40px;
+  position: relative;
+  top: -10px;
   pointer-events: auto;
 }
-
-.nav-icon.mail {
-  height: 21px;
-}
-
-.nav-icon.facebook {
-  position: relative;
-  top: 1px;
-}
-.nav-icon.insta {
-  width: 17px;
-  height: 17px;
-}
-
-.nav-icon.pin {
-  height: 17px;
-  width: 17px;
-}
-
-.nav-icon.search {
-  width: 18px;
-  height: 18px;
-}
-
 
 a:hover .nav-icon {
   filter: invert(50%);

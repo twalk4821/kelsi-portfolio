@@ -35,7 +35,7 @@
 .home-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, calc(.75 * (.5 * 100vw)));
+  grid-template-rows: repeat(5, calc(.75 * (.5 * 100vw)));
   padding: 0 2.5%;
   grid-gap: 5px;
   margin: 100px 0 0 0;
@@ -106,11 +106,19 @@
   background-size: 100% 100%;
 }
 
+.image-8 {
+  background-image: url("./projectViews/Project8/assets/image-1.gif");
+  background-size: 100% 100%;
+}
+.image-9 {
+  background-image: url("./projectViews/Project9/assets/image-3.jpg");
+  background-size: 100% 100%;
+}
 
 @media screen and (max-width: 600px) {
   .home-grid {
     grid-template-columns: 90vw;
-    grid-template-rows: repeat(8, calc(.75 * 100vw));
+    grid-template-rows: repeat(10, calc(.75 * 100vw));
     justify-content: center;
     margin-bottom: 50px;
   }

@@ -45,6 +45,14 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="home-grid">
+        <div className="grid-item" onClick={() => this.redirect(8)}>
+            <div className="image image-8"></div>
+            <h3 className="image-text">Identity</h3>
+          </div>
+          <div className="grid-item" onClick={() => this.redirect(9)}>
+            <div className="image image-9"></div>
+            <h3 className="image-text">Business Card Design</h3>
+          </div>
           <div className="grid-item" onClick={() => this.redirect(6)}>
             <div className="image image-1"></div>
             <h3 className="image-text">Wong Kai Wai Retrospective</h3>

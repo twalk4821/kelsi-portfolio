@@ -10,6 +10,7 @@ import Project5 from './projectViews/Project5/Project5';
 import Project6 from './projectViews/Project6/Project6';
 import Project7 from './projectViews/Project7/Project7';
 import Project8 from './projectViews/Project8/Project8';
+import Project9 from './projectViews/Project9/Project9';
 import LikeButton from '../components/LikeButton';
 import ProjectInfo from '../components/ProjectInfo';
 
@@ -72,6 +73,7 @@ class Project extends Component {
   render() {
     const { project, liked } = this.state;
     const chooseProject = (id) => {
+      console.log(id)
       switch (id) {
         case 1:
           return (<Project1 project={project} likeProject={this.likeProject} />);
@@ -89,6 +91,8 @@ class Project extends Component {
           return (<Project7 project={project} likeProject={this.likeProject} />);
         case 8:
           return (<Project8 project={project} likeProject={this.likeProject} />);
+        case 9:
+          return (<Project9 project={project} likeProject={this.likeProject} />);
         default:
           return (<div>Error: could not find the specified project</div>);
       };

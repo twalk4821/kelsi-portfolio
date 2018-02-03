@@ -74,9 +74,13 @@ class Work extends Component {
           <div className="image image-6"></div>
           <h3 className="image-text">Leaves Book Design</h3>
         </div>
-        <div className="grid-item" onClick={() => this.redirect(8)}>
+        <div className="grid-item" onClick={() => this.redirect(9)}>
           <div className="image image-8"></div>
           <h3 className="image-text">Business Card Design</h3>
+        </div>
+        <div className="grid-item" onClick={() => this.redirect(8)}>
+          <div className="image image-9"></div>
+          <h3 className="image-text">Identity</h3>
         </div>
       </div>
       </div>

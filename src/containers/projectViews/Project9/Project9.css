@@ -1,0 +1,112 @@
+.project-8 .project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, calc(.75 * .5 * 90vw));
+  grid-template-areas:
+    "one one"
+    "one one"
+    "header header"
+    "two two"
+    "two two"
+    "three three"
+    "three three"
+    "four four"
+    "four four";
+}
+
+
+@media screen and (max-width: 550px) {
+  .project-8 .project-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, calc(.75 * 90vw));
+    grid-template-areas:
+      "one"
+      "header"
+      "two"
+      "three"
+      "four";
+  }
+
+  .project-8 .project-grid>div {
+    position: relative;
+  }
+  
+  .project-8 .project-grid>div:before {
+    display: table;
+    padding-top: 100%;
+    content: '';
+  }
+  
+  .project-8 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .project-8 .description {
+    flex-direction: column;
+    font-size: 14px;
+    margin-top: 20vh;
+    margin-bottom: 20px;
+  }
+
+  .project-8 .description .heading {
+    margin-bottom: 5px;
+  }
+  .project-8 .description .item {
+    margin-bottom: 20px;
+  }
+  .project-8 .description p {
+    margin: 0px;
+  }
+
+  .project-8 .left {
+    margin-bottom: 20px;
+  }
+}
+
+
+.project-8 .project-grid .item-1 {
+  background-image: url('./assets/image-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: one;
+}
+
+.project-8 .project-grid .header {
+  background-image: url('./assets/intro.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: header;
+}
+
+.project-8 .project-grid .item-2 {
+  background-image: url('./assets/image-2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: two;
+}
+.project-8 .project-grid .item-3 {
+  background-image: url('./assets/image-3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: three;
+}
+.project-8 .project-grid .item-4 {
+  background-image: url('./assets/image-4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: four;
+}
