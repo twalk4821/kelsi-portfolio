@@ -15,7 +15,7 @@
   height: 4vh;
   width: calc(4vh*6.35);
   position: relative;
-  top: 2vh;
+  top: 5vh;
   left: calc((100vw - ((2/3)*100vh))/2 - 10px);
   background-image: url("../assets/about-header.png");
   background-size: contain;
@@ -25,6 +25,7 @@
 
 .about .header {
   height: 60vh;
+  width: 48%;
   margin: 0 auto;
   background-image: url('../assets/about.png');
   background-size: contain;
@@ -32,7 +33,7 @@
   background-position: top;
 
   position: relative;
-  top: -10vh;
+  top: 1vh;
 }
 @media screen and (max-width: 500px) {
   .about .picture {
