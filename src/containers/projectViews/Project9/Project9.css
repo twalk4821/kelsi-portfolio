@@ -1,4 +1,4 @@
-.project-8 .project-grid {
+.project-9 .project-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(9, calc(.75 * .5 * 90vw));
@@ -16,7 +16,7 @@
 
 
 @media screen and (max-width: 550px) {
-  .project-8 .project-grid {
+  .project-9 .project-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, calc(.75 * 90vw));
     grid-template-areas:
@@ -27,17 +27,17 @@
       "four";
   }
 
-  .project-8 .project-grid>div {
+  .project-9 .project-grid>div {
     position: relative;
   }
   
-  .project-8 .project-grid>div:before {
+  .project-9 .project-grid>div:before {
     display: table;
     padding-top: 100%;
     content: '';
   }
   
-  .project-8 .content {
+  .project-9 .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -50,30 +50,30 @@
 
 
 
-  .project-8 .description {
+  .project-9 .description {
     flex-direction: column;
     font-size: 14px;
     margin-top: 20vh;
     margin-bottom: 20px;
   }
 
-  .project-8 .description .heading {
+  .project-9 .description .heading {
     margin-bottom: 5px;
   }
-  .project-8 .description .item {
+  .project-9 .description .item {
     margin-bottom: 20px;
   }
-  .project-8 .description p {
+  .project-9 .description p {
     margin: 0px;
   }
 
-  .project-8 .left {
+  .project-9 .left {
     margin-bottom: 20px;
   }
 }
 
 
-.project-8 .project-grid .item-1 {
+.project-9 .project-grid .item-1 {
   background-image: url('./assets/image-1.jpg');
   background-size: cover;
   background-position: center;
@@ -81,7 +81,7 @@
   grid-area: one;
 }
 
-.project-8 .project-grid .header {
+.project-9 .project-grid .header {
   background-image: url('./assets/intro.jpg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -89,21 +89,21 @@
   grid-area: header;
 }
 
-.project-8 .project-grid .item-2 {
+.project-9 .project-grid .item-2 {
   background-image: url('./assets/image-2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   grid-area: two;
 }
-.project-8 .project-grid .item-3 {
+.project-9 .project-grid .item-3 {
   background-image: url('./assets/image-3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   grid-area: three;
 }
-.project-8 .project-grid .item-4 {
+.project-9 .project-grid .item-4 {
   background-image: url('./assets/image-4.jpg');
   background-size: cover;
   background-position: center;
