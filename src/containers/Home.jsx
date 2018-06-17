@@ -45,6 +45,10 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="home-grid">
+        <div className="grid-item" onClick={() => this.redirect(10)}>
+          <div className="image image-10"></div>
+          <h3 className="image-text">WeShare</h3>
+        </div>
         <div className="grid-item" onClick={() => this.redirect(8)}>
             <div className="image image-8"></div>
             <h3 className="image-text">Identity</h3>

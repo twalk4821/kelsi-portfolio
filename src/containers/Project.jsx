@@ -11,9 +11,9 @@ import Project6 from './projectViews/Project6/Project6';
 import Project7 from './projectViews/Project7/Project7';
 import Project8 from './projectViews/Project8/Project8';
 import Project9 from './projectViews/Project9/Project9';
+import Project10 from './projectViews/project10/Project10';
 import LikeButton from '../components/LikeButton';
 import ProjectInfo from '../components/ProjectInfo';
-
 
 import './Project.css';
 
@@ -93,6 +93,8 @@ class Project extends Component {
           return (<Project8 project={project} likeProject={this.likeProject} />);
         case 9:
           return (<Project9 project={project} likeProject={this.likeProject} />);
+        case 10:
+          return (<Project10 project={project} likeProject={this.likeProject} />);
         default:
           return (<div>Error: could not find the specified project</div>);
       };
