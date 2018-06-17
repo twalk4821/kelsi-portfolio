@@ -6,7 +6,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const model = require('./src/db/model.js');
-const port = 3001;
+const port = 3000;
 const app = express();
 
 app.use(bodyParser.json({ limit: '50mb' }));
